@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttet_final_project_adilet/profile/profile_screen.dart';
 
 class MyBottomNavBar extends StatelessWidget {
   const MyBottomNavBar({
@@ -37,7 +38,14 @@ class MyBottomNavBar extends StatelessWidget {
           ),
           IconButton(
             icon: Icon(Icons.person),
-            onPressed: () {},
+            onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProfileScreen(),
+                ),
+              );
+            },
           ),
         ],
       ),
